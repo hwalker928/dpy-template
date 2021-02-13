@@ -53,9 +53,9 @@ class Bot(commands.Bot):
     async def on_ready(self):
         am_pm = time.strftime("%p", time.gmtime())
         if am_pm == "AM":
-            self.logger("INFO", "Good Morning Harry! I am alive and awake.")
+            self.logger("INFO", "Good Morning! I am alive and awake.")
         else:
-            self.logger("INFO", "Good Afternoon Harry! I want to sleep - but I am alive.")
+            self.logger("INFO", "Good Afternoon! I want to sleep - but I am alive.")
 
 
 if __name__ == '__main__':
